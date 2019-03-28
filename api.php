@@ -17,13 +17,13 @@ $output = [
 // Perform requested operation based on the action that needs to be done
 switch($_GET['action']) {
     case 'client/add' : 
-        include('routes/client/add.php');
+        include('routes/clients/add.php');
         break;
     case 'client/delete' : 
-        include('routes/client/delete.php');
+        include('routes/clients/delete.php');
         break;
     case 'client/update' : 
-        include('routes/client/update.php');
+        include('routes/clients/update.php');
         break;
     case 'sections/add' : 
         include('routes/sections/add.php');
