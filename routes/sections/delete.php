@@ -9,8 +9,8 @@ $id = $_GET['id'];
 
 // Delete Sections and all of its related child tables (links) with relational IDs connected to one another
 $query = "DELETE `sections`, `links` FROM `sections`
-INNER JOIN `links` ON links.sections_id = sections.id
-WHERE sections.id = '$id' ";
+INNER JOIN `links` ON `links`.`sections_id` = `sections`.`id`
+WHERE `sections`.`id` = '$id' ";
 
 $result = mysqli_query($conn, $query);
 
